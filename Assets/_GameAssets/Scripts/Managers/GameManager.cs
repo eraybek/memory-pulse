@@ -127,6 +127,11 @@ public class GameManager : MonoBehaviour
             Debug.LogError("scoreNumberText reference is null! Not assigned in Inspector.");
         }
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
     
     public int CurrentScore => currentScore;
     public bool IsGameStarted => gameStarted;
